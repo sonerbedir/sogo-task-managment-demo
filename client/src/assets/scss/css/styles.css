@@ -1,0 +1,148 @@
+/** FONTS**/
+@import url("https://fonts.googleapis.com/css2?family=Glory:wght@100;300;400;500&display=swap");
+/** VARIABLES **/
+/** GENERAL SETTINGS **/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Glory", sans-serif;
+  color: #4f555a;
+  background-color: #f6f6f6;
+}
+
+a,
+link {
+  text-decoration: none;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #d5e2f2;
+}
+
+button {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4461f2;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #687ff2;
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 200px;
+}
+
+/** HEADER**/
+.main-header {
+  height: 150px;
+  margin-bottom: 50px;
+}
+.main-header .container .navbar {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-header .container .navbar .logo {
+  color: #4461f2;
+}
+.main-header .container .navbar .navbar-list .register {
+  box-shadow: 4px 4px #e5e5e5;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  font-weight: 700;
+  color: #4461f2;
+  background-color: #fff;
+  padding: 10px 20px;
+  margin-left: 50px;
+}
+.main-header .container .navbar .navbar-list .signin {
+  margin-left: 50px;
+  font-weight: 700;
+  color: #4461f2;
+}
+.main-header .container .navbar .navbar-list select {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Glory", sans-serif;
+}
+
+/**LOGIN**/
+.login-container .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.login-container .container .text-content {
+  max-width: 300px;
+}
+.login-container .container .text-content h1 {
+  margin-bottom: 50px;
+  color: #000000;
+}
+.login-container .container .text-content p {
+  font-weight: 700;
+}
+.login-container .container .text-content p .link {
+  color: #4461f2;
+}
+.login-container .container .form {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+}
+.login-container .container .form .primary-input {
+  margin-bottom: 15px;
+}
+.login-container .container .form .primary-button {
+  width: 300px;
+}
+.login-container .container .form .recover {
+  text-align: start;
+  margin: 10px 0;
+  color: #C7C7C7;
+  font-size: 15px;
+}
+
+/**REGISTER**/
+.register-container .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.register-container .container .register-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.register-container .container .register-form .register-input {
+  margin-bottom: 15px;
+  width: 400px;
+}
+.register-container .container .register-form .primary-button {
+  width: 400px;
+}/*# sourceMappingURL=styles.css.map */

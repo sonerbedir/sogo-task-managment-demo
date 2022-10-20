@@ -1,0 +1,176 @@
+/** FONTS**/
+@import url("https://fonts.googleapis.com/css2?family=Glory:wght@100;300;400;500&display=swap");
+
+/** VARIABLES **/
+$primary-font: "Glory", sans-serif;
+$light-color: #f6f6f6;
+$font-color: #4f555a;
+$blue-color: #4461f2;
+
+/** GENERAL SETTINGS **/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: $primary-font;
+  color: $font-color;
+  background-color: $light-color;
+}
+
+a,
+link {
+  text-decoration: none;
+}
+
+input{
+  width: 300px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #d5e2f2;
+}
+
+button{
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: $blue-color;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover{
+    background-color: #687ff2;
+  }
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 200px;
+}
+
+/** HEADER**/
+.main-header {
+  height: 150px;
+  margin-bottom: 50px;
+
+  .container {
+    .navbar {
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo{
+        color: $blue-color;
+      }
+      .navbar-list {
+        .register {
+          box-shadow: 4px 4px #e5e5e5;
+          border: 1px solid #fff;
+          border-radius: 20px;
+          font-weight: 700;
+          color: $blue-color;
+          background-color: #fff;
+          padding: 10px 20px;
+          margin-left: 50px;
+        }
+
+        .signin {
+          margin-left: 50px;
+          font-weight: 700;
+          color: $blue-color;
+        }
+
+        select {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          font-weight: 700;
+          font-size: 16px;
+          font-family: $primary-font;
+        }
+      }
+    }
+  }
+}
+
+/**LOGIN**/
+.login-container {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .text-content{
+      max-width: 300px;
+      h1{
+        margin-bottom: 50px;
+        color: #000000;
+      }
+
+      p{
+        font-weight: 700;
+        .link{
+          color: $blue-color;
+        }
+      }
+    }
+
+    .form{
+      display: flex;
+      flex-direction: column;
+      height: 300px;
+      width: 300px;
+
+      .primary-input{
+        margin-bottom: 15px;
+      }
+
+      .primary-button{
+        width: 300px;
+      }
+
+      .recover{
+        text-align: start;
+        margin: 10px 0;
+        color: #C7C7C7;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+/**REGISTER**/
+.register-container{
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .register-form{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .register-input{
+        margin-bottom: 15px;
+        width: 400px;
+      }
+
+      .primary-button{
+        width: 400px;
+      }
+    }
+  }
+}
