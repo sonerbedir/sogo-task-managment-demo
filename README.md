@@ -1,5 +1,5 @@
 # Sogo Task Managment App
--This application is developed for you to organize your tasks by applying pomodro.
+This application is developed for you to organize your tasks by applying pomodro.
 
 ### `npm start`
  /client
