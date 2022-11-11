@@ -1,6 +1,6 @@
 import React from "react";
 import Join from "../assets/svg/join.svg";
-import Button from "../components/Button";
+import Button from "../components/Buttons/Button";
 import Input from "../components/Input";
 
 export default function Register() {

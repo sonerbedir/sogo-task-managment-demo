@@ -26,12 +26,16 @@ body {
   background-color: $light-color;
 }
 
+ul {
+  list-style: none;
+}
+
 a,
 link {
   text-decoration: none;
 }
 
-input{
+input {
   width: 300px;
   padding: 10px;
   border: none;
@@ -40,7 +44,7 @@ input{
   background-color: #d5e2f2;
 }
 
-button{
+button {
   width: 200px;
   padding: 10px;
   border: none;
@@ -49,14 +53,36 @@ button{
   color: #fff;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     background-color: #687ff2;
   }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cecaca;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
 }
 
 .container {
   max-width: 114rem;
   margin: 0 200px;
+}
+
+.main-container {
+  width: 70rem;
+  margin: 20px 20px;
+}
+
+.logo {
+  color: $blue-color;
 }
 
 /** HEADER**/
@@ -71,9 +97,6 @@ button{
       align-items: center;
       justify-content: space-between;
 
-      .logo{
-        color: $blue-color;
-      }
       .navbar-list {
         .register {
           box-shadow: 4px 4px #e5e5e5;
@@ -112,39 +135,39 @@ button{
     align-items: center;
     justify-content: space-between;
 
-    .text-content{
+    .text-content {
       max-width: 300px;
-      h1{
+      h1 {
         margin-bottom: 50px;
         color: #000000;
       }
 
-      p{
+      p {
         font-weight: 700;
-        .link{
+        .link {
           color: $blue-color;
         }
       }
     }
 
-    .form{
+    .form {
       display: flex;
       flex-direction: column;
       height: 300px;
       width: 300px;
 
-      .primary-input{
+      .primary-input {
         margin-bottom: 15px;
       }
 
-      .primary-button{
+      .primary-button {
         width: 300px;
       }
 
-      .recover{
+      .recover {
         text-align: start;
         margin: 10px 0;
-        color: #C7C7C7;
+        color: #c7c7c7;
         font-size: 15px;
       }
     }
@@ -152,24 +175,160 @@ button{
 }
 
 /**REGISTER**/
-.register-container{
-  .container{
+.register-container {
+  .container {
     display: flex;
     align-items: center;
     justify-content: space-around;
 
-    .register-form{
+    .register-form {
       display: flex;
       align-items: center;
       flex-direction: column;
 
-      .register-input{
+      .register-input {
         margin-bottom: 15px;
         width: 400px;
       }
 
-      .primary-button{
+      .primary-button {
         width: 400px;
+      }
+    }
+  }
+}
+
+/**LEFT NAVİGATİON MENU**/
+.left-navigation-menu {
+  width: 200px;
+  height: 700px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #fff;
+
+  .navigation-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+
+    .navigation-logo-title {
+      color: blue;
+    }
+  }
+
+  .navigation-menu-list {
+    padding: 10px 0;
+
+    .navigation-menu-list-item {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      padding-left: 15px;
+      font-size: 20px;
+      font-weight: 550;
+
+      .list-icon {
+        margin-right: 5px;
+      }
+
+      &:hover {
+        background-color: $blue-color;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+/**SEARCH HEADER**/
+.search-header {
+  width: 75rem;
+  margin: 10px 10px 10px 0;
+  height: 100px;
+  border-radius: 10px;
+  background-color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+
+  .search-input {
+    background-color: $light-color;
+    padding: 10px 35px;
+  }
+
+  .search-svg {
+    position: relative;
+    right: 290px;
+    top: 5px;
+  }
+}
+
+/**HOME**/
+.wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+
+  .dashboard-main-container {
+    width: 75rem;
+    height: 590px;
+    padding: 20px;
+
+    .time-section {
+      width: fit-content;
+    }
+  }
+}
+
+/**DASHBOARD**/
+.dashboard-list-container {
+  display: flex;
+  margin: 20px 0;
+
+  .list-box {
+    width: 37rem;
+    height: 485px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 10px;
+  }
+}
+
+/**LIST**/
+.list-main-container {
+  .list-container {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    .list {
+      max-height: 400px;
+      overflow: auto;
+
+      .list-item {
+        border: 1px solid #f1f1f1;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 5px;
+        font-size: 20px;
+        margin: 10px;
+
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          background-color: $blue-color;
+          color: #fff;
+          cursor: pointer;
+        }
+
+        .folder-icons {
+          margin-right: 5px;
+        }
       }
     }
   }

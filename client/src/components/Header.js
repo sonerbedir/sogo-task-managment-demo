@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "./Logo";
 
 export default function Header() {
   return (
@@ -7,9 +8,7 @@ export default function Header() {
       <div className="main-header">
         <div className="container">
           <div className="navbar">
-              <Link to="/login" className="logo">
-                <h1>SOGO</h1>
-              </Link>
+              <Logo className="logo"/>
             <div className="navbar-list">
               <select className="select-input">
                 <option>English</option>

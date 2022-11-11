@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Pomodro from "../assets/svg/pomodro.svg";
-import Button from "../components/Button";
+import Button from "../components/Buttons/Button";
 import Input from "../components/Input";
 
 export default function Login() {

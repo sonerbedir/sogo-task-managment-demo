@@ -20,6 +20,10 @@ body {
   background-color: #f6f6f6;
 }
 
+ul {
+  list-style: none;
+}
+
 a,
 link {
   text-decoration: none;
@@ -52,6 +56,15 @@ button:hover {
   margin: 0 200px;
 }
 
+.main-container {
+  width: 70rem;
+  margin: 20px 20px;
+}
+
+.logo {
+  color: #4461f2;
+}
+
 /** HEADER**/
 .main-header {
   height: 150px;
@@ -62,9 +75,6 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.main-header .container .navbar .logo {
-  color: #4461f2;
 }
 .main-header .container .navbar .navbar-list .register {
   box-shadow: 4px 4px #e5e5e5;
@@ -124,7 +134,7 @@ button:hover {
 .login-container .container .form .recover {
   text-align: start;
   margin: 10px 0;
-  color: #C7C7C7;
+  color: #c7c7c7;
   font-size: 15px;
 }
 
@@ -145,4 +155,28 @@ button:hover {
 }
 .register-container .container .register-form .primary-button {
   width: 400px;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/**DASHBOARD**/
+.dashboard-container {
+  height: 100%;
+  width: 100%;
+}
+.dashboard-container .left-navigation-menu {
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  background-color: #fff;
+}
+.dashboard-container .search-header {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+}
+.dashboard-container .dashboard-item-container {
+  position: absolute;
+  background-color: red;
+  width: 100%;
+}
+
+/**MENU**//*# sourceMappingURL=styles.css.map */
